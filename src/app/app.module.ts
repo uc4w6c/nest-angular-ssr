@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import {TransferHttpCacheModule} from '@nguniversal/common';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     TransferHttpCacheModule,
     HttpClientModule,
+    BrowserTransferStateModule,
     AppRoutingModule
   ],
   providers: [],
