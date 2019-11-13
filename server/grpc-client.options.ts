@@ -1,3 +1,4 @@
+/*
 import { ClientOptions, Transport } from '@nestjs/microservices';
 import { join } from 'path';
 
@@ -19,3 +20,4 @@ export const grpcClientOptions: ClientOptions = {
     },
   },
 };
+*/

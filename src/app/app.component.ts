@@ -23,12 +23,12 @@ export class AppComponent implements OnInit {
     });
 
     const bodyFunction = () => {
-      // 5秒waitする
+      // 0.5秒waitする -> 5秒から一時変更
       new Promise((resolve, reject) => {
         console.log('5sec wait')
         setTimeout(() => {
             resolve();
-        }, 5000);
+        }, 500);
       });
       return 'This is Body';
     }

@@ -1,7 +1,8 @@
 ・️実行
 npm run serve
 
-
+・generateする
+ng generate component map-sample --module app
 
 参考
 ・gRPC

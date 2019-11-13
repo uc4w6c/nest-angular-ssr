@@ -4,19 +4,25 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AgmCoreModule } from '@agm/core';
 
 import {TransferHttpCacheModule} from '@nguniversal/common';
+import { MapSampleComponent } from './map-sample/map-sample.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MapSampleComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     TransferHttpCacheModule,
     HttpClientModule,
     BrowserTransferStateModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAb1JPsriEszWeSvPggncHILjnbnz63fKY'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]
