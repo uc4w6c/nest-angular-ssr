@@ -23,7 +23,7 @@ import { PlatformComponent } from './platform/platform.component';
     BrowserTransferStateModule,
     AppRoutingModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyAb1JPsriEszWeSvPggncHILjnbnz63fKY'
+      apiKey: 'XXXXXXXXXXXXXXXXXXXXXX'
     }),
   ],
   providers: [],
