@@ -8,11 +8,13 @@ import { AgmCoreModule } from '@agm/core';
 
 import {TransferHttpCacheModule} from '@nguniversal/common';
 import { MapSampleComponent } from './map-sample/map-sample.component';
+import { PlatformComponent } from './platform/platform.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MapSampleComponent
+    MapSampleComponent,
+    PlatformComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

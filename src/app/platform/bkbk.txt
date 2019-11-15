@@ -2,19 +2,22 @@ import { Component, OnInit, PLATFORM_ID, Inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
 @Component({
-  selector: 'app-map-sample',
-  templateUrl: './map-sample.component.html',
-  styleUrls: ['./map-sample.component.css']
+  selector: 'app-platform',
+  templateUrl: './platform.component.html',
+  styleUrls: ['./platform.component.css']
 })
-export class MapSampleComponent implements OnInit {
+export class PlatformComponent implements OnInit {
+
+  msg: String;
   isBrowser: boolean;
   constructor(@Inject(PLATFORM_ID) private platformId) {
     this.isBrowser = isPlatformBrowser(platformId);
   }
 
   ngOnInit() {
-    console.log('map-sample Start');
     console.log('this is ' + (this.isBrowser)? 'Browser': 'Server')
+    this.msg = 'platform';
+    alert('Hello!!')
   }
 
 }
